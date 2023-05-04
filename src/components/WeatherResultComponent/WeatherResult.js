@@ -12,7 +12,7 @@ function WeatherResult(coordinates) {
                     setWeather(data)
                 })
         }
-    })
+    }, [coordinates.latitude, coordinates.longitude])
 
     return (
         <div>
